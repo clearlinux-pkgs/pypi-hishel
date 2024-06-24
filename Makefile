@@ -1,5 +1,5 @@
 PKG_NAME := pypi-hishel
-URL = https://files.pythonhosted.org/packages/ac/9b/fdbc7b19a55f5b554bad425ba092bc2aa62132a40c967740146bc539b094/hishel-0.0.27.tar.gz
+URL = https://files.pythonhosted.org/packages/55/d1/17f755f5f7e0cec3a33daeba80c22cc1b9787f29330e96913251b694486a/hishel-0.0.29.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
