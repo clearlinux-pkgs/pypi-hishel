@@ -6,10 +6,10 @@
 # autospec commit: f35655a
 #
 Name     : pypi-hishel
-Version  : 0.0.31
-Release  : 6
-URL      : https://files.pythonhosted.org/packages/e9/ae/5c9a7841bbc34ca7dbf54fe866c7dad1fe2bc2ba9fc1d40c03794f2eb2ab/hishel-0.0.31.tar.gz
-Source0  : https://files.pythonhosted.org/packages/e9/ae/5c9a7841bbc34ca7dbf54fe866c7dad1fe2bc2ba9fc1d40c03794f2eb2ab/hishel-0.0.31.tar.gz
+Version  : 0.0.32
+Release  : 7
+URL      : https://files.pythonhosted.org/packages/b2/fa/17bc1ef6b23bd7ecb49b359c116e17779eb556db5c3f3372755fdf75d1f8/hishel-0.0.32.tar.gz
+Source0  : https://files.pythonhosted.org/packages/b2/fa/17bc1ef6b23bd7ecb49b359c116e17779eb556db5c3f3372755fdf75d1f8/hishel-0.0.32.tar.gz
 Summary  : Persistent cache implementation for httpx and httpcore
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -58,15 +58,15 @@ python3 components for the pypi-hishel package.
 
 
 %prep
-%setup -q -n hishel-0.0.31
-cd %{_builddir}/hishel-0.0.31
+%setup -q -n hishel-0.0.32
+cd %{_builddir}/hishel-0.0.32
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1727012801
+export SOURCE_DATE_EPOCH=1727724577
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
