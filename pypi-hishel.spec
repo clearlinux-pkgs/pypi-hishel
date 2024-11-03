@@ -6,10 +6,10 @@
 # autospec commit: f35655a
 #
 Name     : pypi-hishel
-Version  : 0.0.33
-Release  : 9
-URL      : https://files.pythonhosted.org/packages/ce/cf/d4414a62b77d1f3f58a0d812be20efe4a647fc1e103cec7c9ac559efe576/hishel-0.0.33.tar.gz
-Source0  : https://files.pythonhosted.org/packages/ce/cf/d4414a62b77d1f3f58a0d812be20efe4a647fc1e103cec7c9ac559efe576/hishel-0.0.33.tar.gz
+Version  : 0.1.1
+Release  : 10
+URL      : https://files.pythonhosted.org/packages/10/b9/d7328c8507e45e27784e9c1f440c2b900ae1e60a980480d869b6c0b2553c/hishel-0.1.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/10/b9/d7328c8507e45e27784e9c1f440c2b900ae1e60a980480d869b6c0b2553c/hishel-0.1.1.tar.gz
 Summary  : Persistent cache implementation for httpx and httpcore
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -24,8 +24,14 @@ BuildRequires : pypi(hatchling)
 %define debug_package %{nil}
 
 %description
-<p align="center">
-<a href=""><img width="350" height="250" src="https://raw.githubusercontent.com/karpetrosyan/hishel/master/.github/logo.jpg" alt='HTTPX'></a>
+<p align="center" class="logo">
+<div align="center">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/karpetrosyan/hishel/master/docs/static/Shelkopryad_350x250_yellow.png">
+<source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/karpetrosyan/hishel/master/docs/static/Shelkopryad_350x250_black.png">
+<img alt="Logo" src="https://raw.githubusercontent.com/karpetrosyan/hishel/master/docs/static/Shelkopryad_350x250_yellow.png">
+</picture>
+</div>
 </p>
 
 %package license
@@ -51,22 +57,21 @@ Group: Default
 Requires: python3-core
 Provides: pypi(hishel)
 Requires: pypi(httpx)
-Requires: pypi(typing_extensions)
 
 %description python3
 python3 components for the pypi-hishel package.
 
 
 %prep
-%setup -q -n hishel-0.0.33
-cd %{_builddir}/hishel-0.0.33
+%setup -q -n hishel-0.1.1
+cd %{_builddir}/hishel-0.1.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1728427474
+export SOURCE_DATE_EPOCH=1730667280
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
